@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+</head>
+<body>
+<form action="treat.jsp" method="get/post" >
+    <table width="500">
+        <caption>请入个人信息进行注册</caption>
+            <td>姓名:
+                <input type="text" name="name" size="20" value="请输入名字" minlength="1" maxlength="30"/>
+            </td>
+        </tr>
+        <tr>
+            <td>密码:<input type="password" name="passw" size="20" value="" minlength="1" maxlength="30"/></td>
+        </tr>
+        <tr>
+            <td>性别:<input type="radio" name="xingbie" value="男"/>男<br/>
+                <input type="radio" name="xingbie" value="女"/>女
+            </td>
+        </tr>
+        <tr>
+            <td>爱好：<select name="aihao0">
+                <option value="编程" selected>编程</option>
+                <option value="画画">画画</option>
+            </select>
+                <br/>
+                <select name="aihao1">
+                    <option value="羽毛球" selected>羽毛球</option>
+                    <option value="篮球">篮球</option>
+                </select>
+                <br/>
+                <select name="aihao2" size="2" multiple>
+                    <option value="唱歌" selected>唱歌</option>
+                    <option value="瑜伽">瑜伽</option>
+                    <option value="滑板">滑板</option>
+                    <!--
+     <div class="aihao2">
+   <input type="checkbox" value="唱歌" name="aihao2" selected>唱歌</input>
+   <input type="checkbox" value="瑜伽" name="aihao3">瑜伽</input>
+   <input type="checkbox" value="滑板" name="aihao4">滑板</input>
+ </div>-->
+                </select>
+                <hr/>
+            </td>
+        </tr>
+        <tr>
+            <td>自我简介:</br>
+                <textarea name="jieshao" rows="10" cols="25" value="请输入简介"></textarea><br/>
+                <input type="submit" value="登陆" />
+                <input type="reset" name="reset" value="重设"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
